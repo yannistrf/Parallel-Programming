@@ -1,0 +1,35 @@
+>>> RESULTS WITHOUT USING THE TEMP VARIABLE
+
+*** Running experiment with args = 10000 10000 ***
+
+>> Serial time: 0.16694
+
+### THREADS = 2 ###
+*******************
+> Schedule = static
+Average execution time: 0.12685
+-------------------------------
+> Schedule = dynamic
+Average execution time: 0.19365
+-------------------------------
+> Schedule = guided
+Average execution time: 0.12765
+-------------------------------
+> Schedule = auto
+Average execution time: 0.12663
+-------------------------------
+
+### THREADS = 4 ###
+*******************
+> Schedule = static
+Average execution time: 0.07705
+-------------------------------
+> Schedule = dynamic
+Average execution time: 0.2209
+-------------------------------
+> Schedule = guided
+Average execution time: 0.07688
+-------------------------------
+> Schedule = auto
+Average execution time: 0.07706
+-------------------------------
