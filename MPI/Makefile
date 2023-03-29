@@ -15,7 +15,7 @@ EXEC2 = $(BIN)/mpi_mat_vect
 EXECS = $(EXEC1) $(EXEC2)
 
 # arguments for pi program
-ARGS1 = 1000000
+ARGS1 = 10000000
 # arguments for matrix program
 ARGS2 = 4
 # number of processes to create
