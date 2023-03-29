@@ -19,7 +19,7 @@ for thread_value in thread_values:
         avg_thread_time = 0
         for i in range(0, EXECUTIONS):
             # Run program and redirect the output to a temp.txt file
-            os.system(f"./pi_comp {thread_value} {throws_value} > temp.txt")
+            os.system(f"./bin/pi_comp {thread_value} {throws_value} > temp.txt")
             file = open("temp.txt", "r")
 
             # Parse output
