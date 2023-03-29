@@ -39,9 +39,9 @@ or "make runmat" to execute with arguments defined inside the Makefile.
 We will not explain exactly how the multiplication is
 happening but here is an example to help you understand.
 
-     | 1 1 6 | | 2 |     | 1 |     | 1 |     | 6 |   | 7 |
-Ax = | 3 0 3 | | 5 | = 2 | 3 | + 5 | 0 | + 0 | 3 | = | 6 |
-     | 1 1 4 | | 0 |     | 1 |     | 1 |     | 4 |   | 7 |
+          | 1 1 6 | | 2 |     | 1 |     | 1 |     | 6 |   | 7 |
+     Ax = | 3 0 3 | | 5 | = 2 | 3 | + 5 | 0 | + 0 | 3 | = | 6 |
+          | 1 1 4 | | 0 |     | 1 |     | 1 |     | 4 |   | 7 |
 
 As we can see, each process can get some columns of A, a part of x and
 then calculate a fraction of the final x element. After that, process 0
