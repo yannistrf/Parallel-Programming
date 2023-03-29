@@ -5,13 +5,13 @@ os.system("make pi")
 print("\n\n")
 
 # For how many threads we want to run our experiment
-thread_values = [1, 2, 4, 8, 16]
+thread_values = [2, 4]
 # How many darts in each execution
 throws_values = [100000, 1000000, 10000000]
 # Run the same program with the same arguments
 # and get the average values
 EXECUTIONS = 5
-print(f"MPI\n")
+print(f"MPI")
 print("-------------------------------------------------------------------------")
 for thread_value in thread_values:
     for throws_value in throws_values:
@@ -20,7 +20,7 @@ for thread_value in thread_values:
         avg_thread_time = 0
         for i in range(0, EXECUTIONS):  
             # Run program and redirect the output to a temp.txt file
-            os.system(f"mpiexec -np {thread_value} ./bin/pi_comp {throws_value} > temp.txt")  
+            os.system(f"mpiexec -n {thread_value} ./bin/pi_comp {throws_value} > temp.txt")  
         file = open("temp.txt", "r")
 
             # Parse output
@@ -41,6 +41,8 @@ for thread_value in thread_values:
         print(f"Threads: {thread_value} | Throws: {throws_value}")
         print(f"Serial time: {avg_serial_time} | Parallel time: {avg_parallel_time} ")
         print("-------------------------------------------------------------------------\n")
+    
+    print("")
 
 
 
