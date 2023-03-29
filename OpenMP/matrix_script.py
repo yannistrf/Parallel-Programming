@@ -13,7 +13,7 @@ args = "10000 10000"
 # build executable
 os.system("make mat")
 # the name of the executable
-app = "bin/omp_mat_vect_rand_split"
+app = "bin/omp_upper_mat_vect_rand_split"
 
 print(f"\n*** Running experiment with args = {args} ***")
 

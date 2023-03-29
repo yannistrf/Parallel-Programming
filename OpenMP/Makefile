@@ -30,11 +30,11 @@ mat: $(EXEC2)
 
 # build pi_comp, link the object files
 $(EXEC1): $(OBJS1)
-	$(CC) $(OBJS1) -o $(EXEC1) $(LDFLAGS)
+	$(CC) $(LDFLAGS) $(OBJS1) -o $(EXEC1)
 
 # build omp_mat_vect_rand_split, link the object files
 $(EXEC2): $(OBJS2)
-	$(CC) $(OBJS2) -o $(EXEC2) $(LDFLAGS)
+	$(CC) $(LDFLAGS) $(OBJS2) -o $(EXEC2)
 
 # rule to compile all source files
 $(BIN)/%.o: $(SRC)/%.c

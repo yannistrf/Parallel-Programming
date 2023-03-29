@@ -1,4 +1,10 @@
 # Parallel programing with OpenMP
+In this project we experiment with two different kinds of problems
+and face different challenges. It is highly recommended to run the
+experiments and see the results for yourself for a better understanding. 
+This project was made for my Parallel Systems course at National
+Kapodistrian University of Athens, Department of Informatics and
+Telecommunications.
 
 ## Pi calculation
 
